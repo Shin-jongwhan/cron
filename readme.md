@@ -16,9 +16,13 @@ crontab -e
 #### ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/3b6a328a-bbbd-4c07-8b31-106157969959)
 ### test code
 ```
+from datetime import datetime, timezone, timedelta
+
+
+sDate_hms = datetime.now(timezone(timedelta(hours=9))).strftime('%Y%m%d%H%M%S')
 sFile = "/home/jhshin/script/bi_system/cron_log_test.txt"
 f = open(sFile, 'a')
-f.write("test\n")
+f.write("test_{0}\n".format(sDate_hms))
 f.close()
 ```
 ### <br/>
@@ -27,8 +31,8 @@ f.close()
 ```
 crontab -l
 ```
-#### ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/ac1f0aab-9165-4a9c-8a15-2acd5dd10ab2)
+#### ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/5ce495fe-8ea5-42ff-942a-c562ff27f100)
 ### <br/>
 
 ### 이제 test log 파일에 결과가 잘 입력되는지 봐보자
-#### ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/57c4c636-1a26-49a6-b0cb-3f895b7c413f)
+#### 
