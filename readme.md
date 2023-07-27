@@ -35,4 +35,8 @@ crontab -l
 ### <br/>
 
 ### 이제 test log 파일에 결과가 잘 입력되는지 봐보자
-#### 
+#### ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/7d62e9c5-d33e-40be-baa5-335e0b3992b7)
+### <br/><br/><br/>
+
+## ❗️ crontab 을 사용할 때 꼭 알아두어야 할 사항
+### 
