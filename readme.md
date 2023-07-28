@@ -55,24 +55,24 @@ python test.py
     ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/ef7a720f-48be-407c-bcfa-aeb0940a69e3)
   - crontab -e 로 크론탭 등록에서 PATH 를 같이 명령어에 적어주기<br/>
     ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/6e560aa0-8fed-4ccf-a1d6-abdc8ad5daec)
-- conda 환경을 가져오고 싶다면 따로 init 을 해줘야 한다.
-```
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/jhshin/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/jhshin/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/jhshin/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/jhshin/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-conda activate
-```
+- conda 환경을 가져오고 싶다면 따로 init 을 해줘야 한다.<br/>
+  ```
+  # >>> conda initialize >>>
+  # !! Contents within this block are managed by 'conda init' !!
+  __conda_setup="$('/home/jhshin/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+  if [ $? -eq 0 ]; then
+      eval "$__conda_setup"
+  else
+      if [ -f "/home/jhshin/miniconda3/etc/profile.d/conda.sh" ]; then
+          . "/home/jhshin/miniconda3/etc/profile.d/conda.sh"
+      else
+          export PATH="/home/jhshin/miniconda3/bin:$PATH"
+      fi
+  fi
+  unset __conda_setup
+  # <<< conda initialize <<<
+  conda activate
+  ```
 ### <br/><br/><br/>
 
 
