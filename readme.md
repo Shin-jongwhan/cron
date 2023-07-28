@@ -44,17 +44,19 @@ crontab -l
 ### 그래서 만약 자신이 접속하는 계정의 환경을 가져와서 사용하고 싶다면 몇 가지 고려해야 할 사항이 있다.
 - python script 를 사용하고 싶다면 .sh 스크립트에서 실행하자.<br/>
 ex)
-```
-#!/bin/bash --login
-python test.py
-```
+  ```
+  #!/bin/bash --login
+  python test.py
+  ```
 
 - 나의 shell 환경을 가져오기 : .sh 의 맨 앞에 #!/bin/bash --login 을 붙이자
+- 
 - crontab 에서 내 PATH 를 가져오고 싶다면 다음과 같이 하자
   - PATH 확인<br/>
     ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/ef7a720f-48be-407c-bcfa-aeb0940a69e3)
   - crontab -e 로 크론탭 등록에서 PATH 를 같이 명령어에 적어주기<br/>
     ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/6e560aa0-8fed-4ccf-a1d6-abdc8ad5daec)
+    
 - conda 환경을 가져오고 싶다면 따로 init 을 해줘야 한다.<br/>
   ```
   # >>> conda initialize >>>
@@ -72,6 +74,12 @@ python test.py
   unset __conda_setup
   # <<< conda initialize <<<
   conda activate
+  ```
+  
+- 자신의 ~/.bashrc 파일을 가져오고 싶을 때가 있는데 그럴 때는 '. ~/.bashrc' 를 쓰라고 한다. 앞에 '.' 은 source 를 대신한다고 한다. <br/>
+  내가 이용하고 있는 환경은 우분투이고, 테스트해봤지만 적용되지 않았다.
+  ```
+  . ~/.bashrc
   ```
 ### <br/><br/><br/>
 
