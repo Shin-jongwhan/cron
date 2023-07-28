@@ -51,10 +51,11 @@ python test.py
 
 - 나의 shell 환경을 가져오기 : .sh 의 맨 앞에 #!/bin/bash --login 을 붙이자
 - crontab 에서 내 PATH 를 가져오고 싶다면 다음과 같이 하자
-  - PATH 확인
+  - PATH 확인<br/>
+    ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/ef7a720f-48be-407c-bcfa-aeb0940a69e3)
+  - crontab -e 로 크론탭 등록에서 PATH 를 같이 명령어에 적어주기<br/>
+    ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/6e560aa0-8fed-4ccf-a1d6-abdc8ad5daec)
 
 #### ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/ef7a720f-48be-407c-bcfa-aeb0940a69e3)
-
-  - crontab -e 로 크론탭 등록에서 PATH 를 같이 명령어에 적어주기
 #### ![image](https://github.com/Shin-jongwhan/cron/assets/62974484/6e560aa0-8fed-4ccf-a1d6-abdc8ad5daec)
 
